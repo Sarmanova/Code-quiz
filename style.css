@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(125, 125, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 5px;
+}
+
+#pressStart {
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: rgb(145, 40, 135);
+    color: cornsilk;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#quizTime {
+    font-size: 20px;
+    color: floralwhite;
+    margin-bottom: 20px;
+}
+
+#quizAnswers {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+button {
+    font-style: italic;
+}
