@@ -8,16 +8,22 @@ var oneHTML = document.querySelector("#oneHTML");
 var twoHTML = document.querySelector("#twoHTML");
 var threeHTML = document.querySelector("#threeHTML");
 var fourHTML = document.querySelector("#fourHTML");
+var quizTime = document.querySelector("#quizTime");
 // var = "";
 // var = 0;
 // var = 0;
 // var = 0;
 // var loseCounter = 0;
-var isWin = false;
-var timer;
-var timerCount;
+// var isWin = false;
+
+// var timerCount;
 // Arrays used to create blanks and letters on screen
-//var questions = [questionsOne];
+var questions = [
+    "questionsOne",
+    "questionTwo",
+    "questionThree",
+    " questionFour",
+];
 //var answers = ["answerB", "answerC", "answerC", "answerA"];
 // var wrongAnswer = [];
 var questionOne = {
@@ -55,7 +61,96 @@ pressStart.addEventListener("click", function() {
     twoHTML.innerHTML = questionOne.answersB;
     threeHTML.innerHTML = questionOne.answersC;
     fourHTML.innerHTML = questionOne.answersD;
+
+    countdown();
+    console.log(countdown());
 });
+
+// Timer that counts down from 5
+function countdown() {
+    var timeLeft = 45;
+
+    // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
+    var timeInterval = setInterval(function() {
+        // As long as the `timeLeft` is greater than 1
+        if (timeLeft > 1) {
+            // Set the `textContent` of `timerEl` to show the remaining seconds
+            quizTimer.textContent = timeLeft + " seconds remaining";
+            // Decrement `timeLeft` by 1
+            timeLeft--;
+        } else if (timeLeft === 1) {
+            // When `timeLeft` is equal to 1, rename to 'second' instead of 'seconds'
+            quizTimer.textContent = timeLeft + " second remaining";
+            timeLeft--;
+        } else {
+            // Once `timeLeft` gets to 0, set `timerEl` to an empty string
+            quizTimer.textContent = "";
+            // Use `clearInterval()` to stop the timer
+            clearInterval(timeInterval);
+            // Call the `displayMessage()` function
+        }
+    }, 1000);
+}
+
+quizAnswers.addEventListener("click", function(event) {
+    var clickAnswer = event.target;
+    if (quizAnswers.matches("button") === true) {
+        console.log(clickAnswer + " You got right answer");
+    } else {
+        console.log("button not working try again");
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // THEN a timer starts and I am presented with a question
 // WHEN I answer a question
 // THEN I am presented with another question
