@@ -26,6 +26,10 @@ body {
     margin-bottom: 20px;
 }
 
+#p {
+    margin-bottom: 15px;
+}
+
 #quizAnswers {
     margin-bottom: 20px;
     font-size: 25px;
@@ -34,4 +38,5 @@ body {
 
 button {
     font-style: italic;
+    margin: 15px;
 }
