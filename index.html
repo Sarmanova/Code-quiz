@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="quizContainer">
         <h1>Coding Quiz Challenge</h1>
         <button id="pressStart">Start Quiz</button>
 
@@ -21,36 +21,42 @@
                 <div id="quizQuestion"> Are You ready To Get Challenge?
                 </div>
                 <div id="quizAnswers">
-                    <button id="oneHtml "></button>
-                    <button id="twoHtml "> </button>
-                    <button id="threeHtml "> </button>
-                    <button id="fourHtml "> </button>
+                    <button id="oneHtml"></button>
+                    <button id="twoHtml"> </button>
+                    <button id="threeHtml"> </button>
+                    <button id="fourHtml"> </button>
 
                 </div>
             </section>
 
             <section>
-                <div id="quixResults ">
-                    <div class="win-loss-container ">
-                        <div>
-                            <h2>Right: <span class="win ">0 </span> </h2>
-                            <h2>Wrong: <span class="lose ">0</span></h2>
-                        </div>
+                <div id="quizSubmit">
+                    <!-- end screen to submit info -->
+                    <h1>All Done!</h1>
+                    <!-- Confirm end of quiz -->
+                    <p>Your final score is <span id="scoreSpan"></span>.</p>
+                    <!-- display final score -->
+                    <div id="quizScore">
+                        <!-- forum to enter name to submit score -->
+                        <p>Enter Name:</p>
+                        <input type="text" id="fname" name="fname" value="">
+                        <button id="submitScoreBtn">Submit</button>
+                    </div>
+                </div>
+                <div id="scoreContainer">
 
-            </section>
-            <section>
+                    <h1>Highscores</h1>
+                    <ol>
 
-
-
-
-
+                    </ol>
+                    <button id="quizReset">Go Back</button>
 
                 </div>
-            </section>
+    </div>
+    </div>
+    </section>
 
-
-            </div>
-            <script src="script.js "></script>
+    <script src="script.js "></script>
 </body>
 
 </html>
