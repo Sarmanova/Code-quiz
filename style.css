@@ -4,7 +4,7 @@
 
 body {
     background-color: rgb(125, 125, 199);
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
@@ -18,6 +18,8 @@ body {
     color: cornsilk;
     margin-top: 25px;
     margin-bottom: 25px;
+    display: block;
+    margin: auto;
 }
 
 #quizTime {

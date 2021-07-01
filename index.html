@@ -12,51 +12,40 @@
     <div id="quizContainer">
         <h1>Coding Quiz Challenge</h1>
         <button id="pressStart">Start Quiz</button>
-
         <main>
             <section id="quizTime">
                 <div id="p">45 min </div>
                 <div id="quizTimer"></div>
                 <br>
-                <div id="quizQuestion"> Are You ready To Get Challenge?
+                <div id="quizQuestion">
                 </div>
                 <div id="quizAnswers">
-                    <button id="oneHtml"></button>
-                    <button id="twoHtml"> </button>
-                    <button id="threeHtml"> </button>
-                    <button id="fourHtml"> </button>
+                    <button id="oneHtml" class="ans"></button>
+                    <button id="twoHtml" class="ans"> </button>
+                    <button id="threeHtml" class="ans"> </button>
+                    <button id="fourHtml" class="ans"> </button>
 
                 </div>
             </section>
 
             <section>
-                <div id="quizSubmit">
-                    <!-- end screen to submit info -->
+                <div id="lastPage">
                     <h1>All Done!</h1>
-                    <!-- Confirm end of quiz -->
-                    <p>Your final score is <span id="scoreSpan"></span>.</p>
-                    <!-- display final score -->
+                    <div id="finalScore"></div>
                     <div id="quizScore">
-                        <!-- forum to enter name to submit score -->
                         <p>Enter Name:</p>
-                        <input type="text" id="fname" name="fname" value="">
-                        <button id="submitScoreBtn">Submit</button>
                     </div>
-                </div>
-                <div id="scoreContainer">
+                    <input id="Name">
+                    <button id="saveScoreBtn">Save</button>
 
-                    <h1>Highscores</h1>
-                    <ol>
-
-                    </ol>
+                    <ul id="scoreContainer"> </ul>
                     <button id="quizReset">Go Back</button>
-
                 </div>
-    </div>
-    </div>
-    </section>
+            </section>
+        </main>
+</body>
 
-    <script src="script.js "></script>
+<script src="script.js "></script>
 </body>
 
 </html>
