@@ -18,7 +18,7 @@ var scoreContainer = document.querySelector("#scoreContainer");
 var quizContainer = document.querySelector("#quizContainer");
 // Question list
 var questionOne = (question = {
-    question: "What is 36 + 42",
+    question: "What is 36 + 42?",
     answersA: "76",
     answersB: "78",
     answersC: "64",
@@ -118,7 +118,7 @@ quizAnswersHtml.addEventListener("click", function(event) {
         document.getElementById("quizContainer").appendChild(correctAnswerMsg);
 
         setTimeout(function() {
-            correctAnswerMsg.innerHTML = "";
+            correctAnswerMsg.innerHTML = " ";
         }, 1000);
     } else {
         finalScore -= 7;
